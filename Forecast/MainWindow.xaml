@@ -1,0 +1,32 @@
+<Window x:Class="Forecast.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Forecast"
+        mc:Ignorable="d"
+        Title="Weather Forecast" Height="450" Width="800">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
+            <Label Content="City:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <TextBox Name="textBoxCity" Width="200"/>
+            <Button Name="buttonSearch" Content="Search" Margin="10,0,0,0" Width="100" Click="buttonSearch_Click"/>
+        </StackPanel>
+
+        <Button x:Name="buttonShowForecast" Click="buttonShowForecast_Click" Content="Show Forecast"
+        Grid.Row="1" Margin="0,0,0,10"/>
+
+        <ComboBox x:Name="comboBoxDays" Grid.Row="2" Margin="0,0,0,10"/>
+
+        <ScrollViewer Grid.Row="3">
+            <TextBlock Name="textBlockWeather" TextWrapping="Wrap"/>
+        </ScrollViewer>
+    </Grid>
+</Window>
