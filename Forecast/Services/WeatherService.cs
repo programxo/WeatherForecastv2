@@ -1,4 +1,4 @@
-﻿//using Forecast.Models;
+﻿//using WeatherForecast.Models;
 //using Newtonsoft.Json;
 //using System;
 //using System.Collections.Generic;
@@ -7,7 +7,7 @@
 //using System.Text;
 //using System.Threading.Tasks;
 
-//namespace Forecast.Services
+//namespace WeatherForecast.Services
 //{
 //    public class WeatherService
 //    {

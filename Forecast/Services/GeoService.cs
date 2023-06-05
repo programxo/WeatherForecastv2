@@ -6,9 +6,9 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using static Forecast.Models.GeoModel;
+using static WeatherForecast.Models.GeoModel;
 
-namespace Forecast.Services
+namespace WeatherForecast.Services
 {
     public class GeoService
     {

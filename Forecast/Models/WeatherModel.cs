@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace Forecast.Models;
+namespace WeatherForecast.Models;
 public class WeatherInfo
 {
     public string Description { get; set; }

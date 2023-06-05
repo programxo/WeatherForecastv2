@@ -1,5 +1,5 @@
-﻿using Forecast.Models;
-using Forecast.Services;
+﻿using WeatherForecast.Models;
+using WeatherForecast.Services;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -18,9 +18,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using static Forecast.Models.GeoModel;
+using static WeatherForecast.Models.GeoModel;
 
-namespace Forecast
+namespace WeatherForecast
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
